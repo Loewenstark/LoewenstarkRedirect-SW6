@@ -1,0 +1,26 @@
+{
+  "name": "loewenstark/redirect",
+  "description": "Löwenstark Redirect",
+  "authors": [
+    {
+        "name": "Löwenstark Digital Solutions GmbH",
+        "role": "Manufacturer",
+        "homepage": "https://www.loewenstark-digital.com/"
+    }
+  ],
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Loewenstark\\Redirect\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Loewenstark\\Redirect\\LoewenstarkRedirect",
+    "label": {
+      "de-DE": "Löwenstark Redirect",
+      "en-GB": "Löwenstark Redirect"
+    }
+  }
+}
