@@ -60,7 +60,7 @@ class NoRoute implements EventSubscriberInterface
             $url = $this->productService->getRedirectUrlFromRequest($context, $request);
             if($url)
             {
-                $response = new RedirectResponse($url);
+                $response = new RedirectResponse($url, 301);
                 $event->setResponse($response);
             }
         }
