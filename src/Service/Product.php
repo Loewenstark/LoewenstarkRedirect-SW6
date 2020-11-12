@@ -56,25 +56,10 @@ class Product
 
         $url = $this->getProductUrlByNumber($sku, $context, $request);
 
-
         /*
             TODO:
             Add Event at this point
         */
-
-        //Special for FeedMyAnimal
-        if(!$url)
-        {
-            $url = $this->getProductUrlByNumber($sku . 'M', $context, $request); 
-        }
-        if(!$url)
-        {
-            $url = $this->getProductUrlByNumber($sku . '-1', $context, $request); 
-        }
-        if(!$url)
-        {
-            $url = $this->getProductUrlByNumber($sku . '-1M', $context, $request); 
-        }
 
         return $url;
     }
